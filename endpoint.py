@@ -20,8 +20,8 @@ def get_info():
     current_utc_time = datetime.datetime.utcnow().strftime('%Y-%m-%dT%H:%M:%SZ')
 
     # Construct GitHub URLs based on your repository and file names
-    github_repo_url = "https://github.com/username/repo"
-    github_file_url = f"{github_repo_url}/blob/main/file_name.ext"
+    github_repo_url = "https://github.com/yuenfu001/endp"
+    github_file_url = f"{github_repo_url}/blob/main/endpoint.py"
 
     # Create the JSON response
     response_data = {
@@ -37,4 +37,4 @@ def get_info():
     return jsonify(response_data)
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=5000)
+    app.run(debug=True)
